@@ -15,6 +15,7 @@ let listaAlunos = [
     id: 2,
     nome: "Julia Campos",
     cpf: "00200200202",
+    telefone: "61 995328645",
     email: "Julia@Campos.com",
     dataNascimento: "01/01/2005"
   },
@@ -74,7 +75,7 @@ router.put('/alunos/:id', (req, res, next) => {
   // validando os dados pra atualizar a requisição
   const { nome, email, telefone, dataNascimento } = req.body
   if (!nome || !email ||  !telefone|| !dataNascimento) {
-    return res.status(400).json({ error: "nome, email, dataNascimento são obrigatórios!!!" })
+    return res.status(400).json({ error: "nome, email, telefone e dataNascimento são obrigatórios!!!" })
   }
   // atualiza os dados do aluno
   aluno.nome = nome

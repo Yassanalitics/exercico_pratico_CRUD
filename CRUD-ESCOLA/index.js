@@ -9,8 +9,8 @@ const AlunosRouter = require("./routes/alunos")
 app.use(AlunosRouter)
 
 // TODO: Membro 2 - Importar e mapear rota de professores
-const ProfessoresRouter = require("./routes/professores")
-app.use(ProfessoresRouter)
+//const ProfessoresRouter = require("./routes/professores")
+//app.use(ProfessoresRouter)
 
 app.listen(3000, () => {
 console.log('Server is running on http://localhost:3000')
